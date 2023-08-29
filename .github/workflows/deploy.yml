@@ -1,0 +1,13 @@
+name: Deploy spin app
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: running something
+        run: echo "hello world"
